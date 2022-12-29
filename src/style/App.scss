@@ -1,0 +1,21 @@
+:root {
+  --bg-color: #010808;
+  --text-color: #16f9f0;
+  --text-color2: #ffffff;
+  --bg-color3: #585858;
+  --bg-color4: #979797;
+}
+* {
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+}
+
+.App{
+  width: 80%;
+  margin: 0 10%;
+}
+
+@import "./Welcome.scss";
+@import "./Projects.scss";
+
+
