@@ -11,10 +11,11 @@ import petipizza from "./img/petipizza.png";
 import todo from "./img/todo.png";
 import weather from "./img/weather.png";
 import restaurant from "./img/restaurant.png";
-
+import CV from "./components/CV";
 
 function App() {
-  const [showImg, setShowImg] = useState(false);
+  const [showImg, setShowImg] = useState(true);
+  const [showSkills, setShowSkills] = useState(false);
 
   const [addAbleLanguages, setAddAbleLanguages] = useState([
     {
@@ -57,66 +58,60 @@ function App() {
   const [projects, setProjects] = useState([
     {
       name: "Pizza Comparison",
-      usedLanguages:[ 
-        "html", "css", "scss", "javascript", "react"
-      ],
+      usedLanguages: ["html", "css", "scss", "javascript", "react"],
       show: true,
       projectLink: "https://kpeti962.github.io/reactPizzaComparison/",
       githubLink: "https://github.com/Kpeti962/reactPizzaComparison",
-      img: pizzaComparison
+      img: pizzaComparison,
     },
     {
       name: "Meteorological App",
-      usedLanguages:[ 
-        "html", "css", "scss", "javascript", "react"
-      ],
+      usedLanguages: ["html", "css", "scss", "javascript", "react"],
       show: true,
       projectLink: "https://kpeti962.github.io/meteorologicalFunAppForApis/",
       githubLink: "https://github.com/Kpeti962/meteorologicalFunAppForApis",
-      img: weather
+      img: weather,
     },
     {
       name: "Music Player",
-      usedLanguages:[ 
-        "html", "css", "scss", "javascript", "react"
-      ],
+      usedLanguages: ["html", "css", "scss", "javascript", "react"],
       show: true,
       projectLink: "https://kpeti962.github.io/musicPlayerReact/",
       githubLink: "https://github.com/Kpeti962/musicPlayerReact",
-      img: musicPlayer
+      img: musicPlayer,
     },
     {
       name: "Todo List",
-      usedLanguages:[ 
-        "html", "css", "scss", "javascript", "react"
-      ],
+      usedLanguages: ["html", "css", "scss", "javascript", "react"],
       show: true,
       projectLink: "https://kpeti962.github.io/localStoreToDo/",
       githubLink: "https://github.com/Kpeti962/localStoreToDo",
-      img: todo
+      img: todo,
     },
     {
       name: "Pizzeria App",
-      usedLanguages:[ 
-        "html", "css", "scss", "javascript", "react"
-      ],
+      usedLanguages: ["html", "css", "scss", "javascript", "react"],
       show: true,
       projectLink: "https://kpeti962.github.io/peti_pizza",
       githubLink: "https://github.com/Kpeti962/peti_pizza",
-      img: petipizza
+      img: petipizza,
     },
     {
       name: "Reataurant App",
-      usedLanguages:[ 
-        "html", "css", "tailwind", "javascript", "react", "firebase"
+      usedLanguages: [
+        "html",
+        "css",
+        "tailwind",
+        "javascript",
+        "react",
+        "firebase",
       ],
       show: true,
       projectLink: "https://kpeti962.github.io/restaurantWithFirebase/",
       githubLink: "https://github.com/Kpeti962/restaurantWithFirebase",
-      img: restaurant
-    }
-  ])
-
+      img: restaurant,
+    },
+  ]);
 
   return (
     <>
@@ -130,7 +125,10 @@ function App() {
             setAddedLanguages={setAddedLanguages}
             projects={projects}
             setProjects={setProjects}
+            showSkills={showSkills}
+            setShowSkills={setShowSkills}
           />
+          <CV />
           <Skills />
           <Contact />
         </div>

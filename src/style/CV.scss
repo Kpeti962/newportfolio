@@ -1,0 +1,42 @@
+.cv-section {
+  color: var(--text-color);
+  margin-bottom: 150px;
+  .imgs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    .cv {
+      text-align: center;
+      animation: blinker 1s linear infinite;
+      h5 {
+        color: white;
+        margin-right: 50px;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 14px;
+  }
+  img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 550px) {
+  img {
+    width: 300px;
+  }
+}

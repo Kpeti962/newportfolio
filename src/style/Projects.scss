@@ -1,209 +1,67 @@
 .projects-session {
   position: relative;
   height: 600px;
-  background: var(--bg-color3);
+
   box-shadow: 0 0 50px rgb(88, 88, 88);
   border-radius: 25px;
+  color: white;
+  margin-bottom: 150px;
   .title {
-    border-radius: 25px;
-    box-shadow: 0 0 10px gray;
     text-align: center;
     padding: 20px 0;
     color: white;
-    background: var(--bg-color4);
     font-size: 26px;
     font-weight: 800;
   }
   .projects-language {
     display: flex;
-    justify-content: center;
-    background: gray;
-    height: 52px;
-    .html {
+    justify-content: baseline;
+    height: 100px;
+    overflow: auto;
+    div {
       margin: 5px 5px;
       box-shadow: 0 0 5px white;
-      background: rgb(80, 80, 80);
       color: white;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       height: 40px;
-      width: 100px;
-      border-radius: 20px;
+      min-width: 120px;
+      border-radius: 10px;
       h4 {
         background: none;
       }
       button {
         border: none;
-        background: rgb(80, 80, 80);
         color: white;
         cursor: pointer;
-        svg {
-          background: rgb(80, 80, 80);
-        }
-      }
-    }
-    .css {
-      margin: 5px 5px;
-      box-shadow: 0 0 5px white;
-      background: rgb(80, 80, 80);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      width: 100px;
-      border-radius: 20px;
-      h4 {
-        background: none;
-      }
-      button {
-        border: none;
-        background: rgb(80, 80, 80);
-        color: white;
-        cursor: pointer;
-        svg {
-          background: rgb(80, 80, 80);
-        }
-      }
-    }
-    .javascript {
-      margin: 5px 5px;
-      box-shadow: 0 0 5px white;
-      background: rgb(80, 80, 80);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      width: 120px;
-      border-radius: 20px;
-      h4 {
-        background: none;
-      }
-      button {
-        border: none;
-        background: rgb(80, 80, 80);
-        color: white;
-        cursor: pointer;
-        svg {
-          background: rgb(80, 80, 80);
-        }
-      }
-    }
-    .scss {
-      margin: 5px 5px;
-      box-shadow: 0 0 5px white;
-      background: rgb(80, 80, 80);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      width: 100px;
-      border-radius: 20px;
-      h4 {
-        background: none;
-      }
-      button {
-        border: none;
-        background: rgb(80, 80, 80);
-        color: white;
-        cursor: pointer;
-        svg {
-          background: rgb(80, 80, 80);
-        }
-      }
-    }
-    .tailwind {
-      margin: 5px 5px;
-      box-shadow: 0 0 5px white;
-      background: rgb(80, 80, 80);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      width: 150px;
-      border-radius: 20px;
-      h4 {
-        background: none;
-      }
-      button {
-        border: none;
-        background: rgb(80, 80, 80);
-        color: white;
-        cursor: pointer;
-        svg {
-          background: rgb(80, 80, 80);
-        }
-      }
-    }
-    .react {
-      margin: 5px 5px;
-      box-shadow: 0 0 5px white;
-      background: rgb(80, 80, 80);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      width: 100px;
-      border-radius: 20px;
-      h4 {
-        background: none;
-      }
-      button {
-        border: none;
-        background: rgb(80, 80, 80);
-        color: white;
-        cursor: pointer;
-        svg {
-          background: rgb(80, 80, 80);
-        }
-      }
-    }
-    .firebase {
-      margin: 5px 5px;
-      box-shadow: 0 0 5px white;
-      background: rgb(80, 80, 80);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 40px;
-      width: 100px;
-      border-radius: 20px;
-      h4 {
-        background: none;
-      }
-      button {
-        border: none;
-        background: rgb(80, 80, 80);
-        color: white;
-        cursor: pointer;
-        svg {
-          background: rgb(80, 80, 80);
-        }
       }
     }
   }
+  .projects-language::-webkit-scrollbar {
+    background-color: rgb(80, 80, 80);
+    height: 15px;
+  }
+  .projects-language::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
 }
 .added-languages {
-  background: rgb(68, 68, 68);
   display: flex;
-  height: 52px;
+  justify-content: baseline;
+  height: 100px;
+  overflow: auto;
   div {
     margin: 5px 5px;
     box-shadow: 0 0 5px white;
     background: rgb(80, 80, 80);
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 40px;
-    width: 120px;
-  
+    min-width: 120px;
+
     h4 {
       background: none;
     }
@@ -218,11 +76,100 @@
     }
   }
 }
+.added-languages::-webkit-scrollbar {
+  background-color: rgb(80, 80, 80);
+  height: 15px;
+}
+.added-languages::-webkit-scrollbar-thumb {
+  background-color: white;
+}
 
-.project-session{
-  img{
-    width: 350px;
-    height: 220px;
+.project-session {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  div {
+    text-align: center;
+
+    .project-btns {
+      display: flex;
+      justify-content: space-evenly;
+      button {
+        color: white;
+        cursor: pointer;
+      }
+    }
+    img {
+      filter: grayscale(60%);
+      margin: 20px 20px;
+      width: 350px;
+      height: 220px;
+      &:hover {
+        filter: grayscale(0%);
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.1);
+        box-shadow: 0 0 25px white;
+      }
+    }
+  }
+}
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  button {
+    color: white;
+    cursor: pointer;
+    border: none;
+    svg {
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+.move-on-btn {
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  animation: blinker 2s linear infinite;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  width: 305px;
+
+  h2 {
+    background: none;
+    font-size: 18px;
+  }
+  button {
+    color: white;
+    background: none;
+    border: none;
+    svg {
+      width: 25px;
+      height: 25px;
+      background: none;
+    }
+  }
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.2;
   }
 }
 
+@media screen and (max-width: 900px) {
+  .projects-session {
+    .project-session {
+      img {
+        width: 262.5px;
+        height: 165px;
+      }
+    }
+  }
+}
+/* @media screen and (max-width: 1040px) {
+
+}  */

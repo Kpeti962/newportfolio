@@ -8,14 +8,18 @@
 * {
   background-color: var(--bg-color);
   box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+
 }
 
-.App{
+.App {
   width: 80%;
   margin: 0 10%;
 }
 
 @import "./Welcome.scss";
 @import "./Projects.scss";
-
-
+@import "./CV.scss";
+@import "./Skills.scss";
+@import "./Contact.scss";

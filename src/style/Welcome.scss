@@ -159,3 +159,24 @@
     box-shadow: 10px 10px 100px rgb(94, 94, 94);
   }
 }
+
+@media screen and (max-width: 900px){
+  .aboutme-session{
+  
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px){
+  .welcome-session{
+    width: 100%;
+    text-align: center;
+    margin: 0 2%;
+  }
+  .aboutme-session{
+ margin: 100px 0 50px;
+  img{
+    box-shadow: 5px 5px 50px rgb(94, 94, 94);
+    width: 200px;
+  }
+  }
+}
