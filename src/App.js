@@ -14,7 +14,7 @@ import restaurant from "./img/restaurant.png";
 import CV from "./components/CV";
 
 function App() {
-  const [showImg, setShowImg] = useState(true);
+  const [showImg, setShowImg] = useState(false);
   const [showSkills, setShowSkills] = useState(false);
 
   const [addAbleLanguages, setAddAbleLanguages] = useState([
