@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/newportfolio/static/css/main.af165619.css",
+    "main.js": "/newportfolio/static/js/main.27205c2a.js",
+    "static/js/787.8d4efb73.chunk.js": "/newportfolio/static/js/787.8d4efb73.chunk.js",
+    "static/media/resume.pdf": "/newportfolio/static/media/resume.f294a806741a222fbf87.pdf",
+    "static/media/restaurant.png": "/newportfolio/static/media/restaurant.373cc59b9df58905e8b7.png",
+    "static/media/petipizza.png": "/newportfolio/static/media/petipizza.593cac8e18da17eecbf1.png",
+    "static/media/todo.png": "/newportfolio/static/media/todo.39b19cec287772862f8e.png",
+    "static/media/weather.png": "/newportfolio/static/media/weather.2c0e1f4d8f8aa8d7ae28.png",
+    "static/media/musicPlayer.png": "/newportfolio/static/media/musicPlayer.6bcb72336f5381f75f77.png",
+    "static/media/selfImg.png": "/newportfolio/static/media/selfImg.0f3d03f99a7149b366bf.png",
+    "static/media/html.png": "/newportfolio/static/media/html.88210855397292be7df2.png",
+    "static/media/downArrow.png": "/newportfolio/static/media/downArrow.3cadd1821dca9e16de06.png",
+    "static/media/rightArrow.png": "/newportfolio/static/media/rightArrow.a922c3589aad60f36881.png",
+    "static/media/react.png": "/newportfolio/static/media/react.0c42bd36090b06048a06.png",
+    "static/media/leftArrow.png": "/newportfolio/static/media/leftArrow.8e534464f003740240fb.png",
+    "static/media/tailwind.png": "/newportfolio/static/media/tailwind.f13c3182f5b2fb05526f.png",
+    "static/media/pizzaComparison.png": "/newportfolio/static/media/pizzaComparison.f8e4a51e528581eb369c.png",
+    "static/media/vanillasJS.png": "/newportfolio/static/media/vanillasJS.9cbd86d776679d110b58.png",
+    "static/media/css.png": "/newportfolio/static/media/css.9e514a759abc57d3e107.png",
+    "static/media/firebase.png": "/newportfolio/static/media/firebase.8dd8eef287d80c8d717c.png",
+    "static/media/sketchMan.png": "/newportfolio/static/media/sketchMan.ce0603403aa80943c25d.png",
+    "static/media/cv.png": "/newportfolio/static/media/cv.df38c0176c6111f91cfb.png",
+    "index.html": "/newportfolio/index.html",
+    "main.af165619.css.map": "/newportfolio/static/css/main.af165619.css.map",
+    "main.27205c2a.js.map": "/newportfolio/static/js/main.27205c2a.js.map",
+    "787.8d4efb73.chunk.js.map": "/newportfolio/static/js/787.8d4efb73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af165619.css",
+    "static/js/main.27205c2a.js"
+  ]
+}
