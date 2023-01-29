@@ -10,8 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import Carousel from 'react-bootstrap/Carousel';
 
 const Projects = ({
   addedLanguages,
@@ -109,7 +108,7 @@ const Projects = ({
             );
           })}
         </div>
-        <div ref={scrl} className="project-session">
+        <div  ref={scrl} className="project-session">
           {projectsForSlider.map((project, index) => (
             <div>
               <h4>{project.name}</h4>
@@ -119,20 +118,19 @@ const Projects = ({
                 <button>Go to link</button>
               </div>
             </div>
-            //legyen modal az információkról
           ))}
         </div>
         <div className="arrows">
           <motion.button
             className="left-arrow"
-            onClick={() => slide(-150)}
+            onClick={() => slide(-200)}
             whileTap={{ scale: 0.75 }}
           >
             <FontAwesomeIcon icon={faAngleLeft} />
           </motion.button>
           <motion.button
             className="right-arrow"
-            onClick={() => slide(+150)}
+            onClick={() => slide(+200)}
             whileTap={{ scale: 0.75 }}
           >
             <FontAwesomeIcon icon={faAngleRight} />

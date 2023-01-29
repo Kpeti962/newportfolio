@@ -5,6 +5,10 @@
   --bg-color3: #585858;
   --bg-color4: #979797;
 }
+.text-white{
+  color: white;
+  text-decoration: none;
+}
 * {
   background-color: var(--bg-color);
   box-sizing: border-box;

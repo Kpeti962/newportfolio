@@ -1,26 +1,16 @@
 import React, { useState, useRef } from "react";
-import Button from "react-bootstrap/Button";
-import Overlay from "react-bootstrap/Overlay";
-import Tooltip from "react-bootstrap/Tooltip";
+
 
 const Contact = () => {
-  const [show, setShow] = useState(false);
-  const target = useRef(null);
-
   return (
     <div className="contact-section">
-      <h2>Contact</h2>
-      <Button ref={target} onClick={() => setShow(!show)}>
-        E-mail
-      </Button>
-
-      <Overlay target={target.current} show={show} placement="right">
-        {(props) => (
-          <Tooltip className="info" id="info" {...props}>
-            <h3>kpeti962@gmail.com</h3>
-          </Tooltip>
-        )}
-      </Overlay>
+      <h1 className="text-white">Contact</h1>
+      <div className="info">
+        <h3 className="left-info"><a href="kpeti962@gmail.com">kpeti962@gmail.com</a></h3>
+        <h3 className="right-info"><a href="+36306464894">+36306464894</a></h3>
+        <h3 className="left-info"><a href="https://www.linkedin.com/in/p%C3%A9ter-koncz-53304720b/" target="_blank">LinkedIn Link</a></h3>
+        <h3 className="right-info"><a href="https://github.com/Kpeti962" target="_blank">Github Link</a></h3>
+      </div>
     </div>
   );
 };

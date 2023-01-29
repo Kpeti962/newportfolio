@@ -1,18 +1,57 @@
 .contact-section {
-  color: white;
-  width: 40%;
-  margin: 30%;
-
-  h2 {
+  height: 300px;
+  h1 {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 80px 0;
   }
-  Button {
-    color: white;
-    font-size: 22px;
+
+  .left-info {
+    margin-right: 55%;
+    background-color: var(--text-color);
+    border-radius: 10px / 30px;
+    text-align: center;
+    a {
+      background-color: var(--text-color);
+      color: var(--bg-color);
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+        transition: all ease-in-out 0.5s;
+      }
+    }
+  }
+  .right-info {
+    margin-left: 55%;
+    background-color: var(--text-color);
+    border-radius: 10px / 30px;
+    text-align: center;
+    a {
+      background-color: var(--text-color);
+      color: var(--bg-color);
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+        transition: all ease-in-out 0.5s;
+      }
+    }
   }
 }
-.info {
-  color: white;
-  margin-left: 180px;
+
+@media screen and (max-width: 1000px) {
+  .contact-section {
+    .left-info {
+     
+        margin-right: 0;
+    
+    }
+    .right-info {
+      
+        margin-left: 0;
+    
+    }
+  }
 }

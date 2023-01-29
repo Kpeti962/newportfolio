@@ -30,8 +30,7 @@ const Welcome = ({ showImg, setShowImg }) => {
           since 2022, and I also completed a frontend developer online training
           at EPAM Systems Inc. The more I delved deeper into its mysteries, the
           more I liked this profession. I know I still have a long way to go,
-          but I think I'm on the right track. In this portfolio I try to show
-          everything I've learned so far.
+          but I think I'm on the right track.
         </h4>
       </div>
       {showBtn && (
