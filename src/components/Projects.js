@@ -6,11 +6,9 @@ import {
   faAngleLeft,
   faAngleRight,
   faArrowDown,
-  faBars
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import Carousel from 'react-bootstrap/Carousel';
 
 const Projects = ({
   addedLanguages,
@@ -24,8 +22,6 @@ const Projects = ({
   const [scrollX, setscrollX] = useState(0);
   const [scrolEnd, setscrolEnd] = useState(false);
   const [projectsForSlider, setProjectsForSlider] = useState([]);
-  
- 
 
   const slide = (shift) => {
     scrl.current.scrollLeft += shift;
@@ -81,7 +77,7 @@ const Projects = ({
     <>
       <div className="projects-session">
         <div className="title">My Projects</div>
-       
+
         <div className="projects-language">
           {addAbleLanguages.map((language, index) => {
             const { className, name, id } = language;
@@ -108,14 +104,22 @@ const Projects = ({
             );
           })}
         </div>
-        <div  ref={scrl} className="project-session">
+        <div ref={scrl} className="project-session">
           {projectsForSlider.map((project, index) => (
             <div>
               <h4>{project.name}</h4>
               <img src={project.img} alt="" />
               <div className="project-btns">
-                <button>Go to code</button>
-                <button>Go to link</button>
+                <button>
+                  <a href={project.githubLink} target="_blank">
+                    Go to code
+                  </a>
+                </button>
+                <button>
+                  <a href={project.projectLink} target="_blank">
+                    Go to link
+                  </a>
+                </button>
               </div>
             </div>
           ))}

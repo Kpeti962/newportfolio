@@ -95,8 +95,12 @@
       display: flex;
       justify-content: space-evenly;
       button {
-        color: white;
-        cursor: pointer;
+        a {
+          box-shadow: inset 3px 3px 45px #292929, inset -5px -5px 10px gray;
+          color: white;
+          cursor: pointer;
+          text-decoration: none;
+        }
       }
     }
     img {
@@ -107,8 +111,7 @@
       &:hover {
         filter: grayscale(0%);
         transition: all 0.4s ease-in-out;
-        transform: scale(1.1);
-        box-shadow: 0 0 25px white;
+        box-shadow: 0 0 15px white;
       }
     }
   }
@@ -170,6 +173,3 @@
     }
   }
 }
-/* @media screen and (max-width: 1040px) {
-
-}  */

@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import selfImg from "../img/selfImg.png";
-
 import { Typewriter } from "react-simple-typewriter";
 
 const Welcome = ({ showImg, setShowImg }) => {

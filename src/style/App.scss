@@ -5,16 +5,15 @@
   --bg-color3: #585858;
   --bg-color4: #979797;
 }
-.text-white{
+.text-white {
   color: white;
   text-decoration: none;
 }
 * {
   background-color: var(--bg-color);
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
-
 }
 
 .App {

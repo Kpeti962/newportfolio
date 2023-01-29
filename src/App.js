@@ -16,7 +16,6 @@ import CV from "./components/CV";
 function App() {
   const [showImg, setShowImg] = useState(false);
   const [showSkills, setShowSkills] = useState(false);
-
   const [addAbleLanguages, setAddAbleLanguages] = useState([
     {
       className: "html",
